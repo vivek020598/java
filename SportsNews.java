@@ -6,20 +6,44 @@ class SportsNews{
     String top10Bowlers [] = {"Kapil Dev","Zaheer Khan","Harbhajan Singh","Ishant Sharma","Ajit Agarkar","Erapalli Prasanna","Anil Kumble","Ravichandran Ashwin","Bhuvneshwar Kumar", "Jasprit Bumrah"};
     String top10OdiTeams[] = {"India", "England ", "South Africa", "West Indies", "Australia", "Pakistan", "India ", "New Zealand ", "Sri Lanka", "South Africa"};
 	
-	System.out.println("Top 10 batsmen are");
+	//increment
+	System.out.println("Top 10 batsmen in increment order are");
 	for(int index = 0; index < top10Batsmen.length; index++){
 	System.out.println(top10Batsmen[index]);
 	}
-	System.out.println("Top 10 women batsmen are");
+	//decrement
+	System.out.println("Top 10 batsmen in decrement order are");
+	for(int index = top10Batsmen.length-1 ; index >= 0 ; index--){
+	System.out.println(top10Batsmen[index]);
+	}
+	//increment
+	System.out.println("Top 10 women batsmen in increment order  are");
 	for(int index = 0; index < top10Batsmen.length; index++){
 	System.out.println(top10WomenBatsmen[index]);
 	}
-	System.out.println("Top 10 bowlers");
-	for(int index = 0; index < top10Batsmen.length; index++){
+	//decrement
+	System.out.println("Top 10 women batsmen in decrement order  are");
+	for(int index = top10Batsmen.length-1 ; index >= 0; index--){
+	System.out.println(top10Batsmen[index]);
+	}
+	//increment
+	System.out.println("Top 10 bowlers in increment order are");
+	for(int index = 0; index < top10Bowlers.length; index++){
 	System.out.println(top10Bowlers[index]);
 	}
-	System.out.println("Top 10 ODI teams are");
+	//decrement
+	System.out.println("Top 10 bowlers in decrement order are");
+	for(int index = top10Bowlers.length-1 ; index >= 0 ; index--){
+	System.out.println(top10Bowlers[index]);
+	}
+	//increment
+	System.out.println("Top 10 ODI teams  in increment order  are");
 	for(int index = 0; index < top10Batsmen.length; index++){
+	System.out.println(top10OdiTeams[index]);
+	}
+	//decrement
+	System.out.println("Top 10 ODI teams  in decrement order  are");
+	for(int index = top10OdiTeams.length-1; index >= 0 ; index--){
 	System.out.println(top10OdiTeams[index]);
 	}
 	

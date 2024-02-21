@@ -16,20 +16,41 @@ System.out.println("Restaurent name is" + restaurantName);
 System.out.println("Restaurent location" + location);
 System.out.println("Restaurent owner is" + ownerName);
 
-System.out.println("Desserts are");
+// increment
+System.out.println("desserts in incremental order are");
 for(int index = 0; index < dessert.length; index++){
 System.out.println(dessert[index] + "--------->" + dessertPrice[index]);
 }
+
+//decrement
+System.out.println("Desserts in decremental order are");
+for(int index = dessert.length-1; index >= 0; index--){
+System.out.println(dessert[index] + "--------->" + dessertPrice[index]);
+}
  
-System.out.println("starters are");
+ // increment
+System.out.println("starters in incremental order are are");
 for(int index = 0; index < starters.length; index++){
 System.out.println(starters[index] + "--------->" + startersPrice[index]);
 }
 
-System.out.println("Main course are");
+//decrement
+System.out.println("starters in decremental order are are");
+for(int index = starters.length-1; index >= 0; index--){
+System.out.println(starters[index] + "--------->" + startersPrice[index]);
+}
+
+
+// increment
+System.out.println("Main course in incremental order are are");
 for(int index = 0; index < mainCourse.length; index++){
 System.out.println(mainCourse[index] + "--------->" + mainCoursePrice[index]);
 }
 
+//decrement
+System.out.println("main Course in decremental order are are");
+for(int index = dessert.length-1; index >= 0; index--){
+System.out.println(mainCourse[index] + "--------->" + mainCoursePrice[index]);
+}
 }
 }
