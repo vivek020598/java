@@ -1,23 +1,24 @@
-class Tv{
-static boolean isTurnedOn;
-		static int maxVolume = 100;
+class Speaker{
+static boolean isConnected;
+		static int maxVolume = 10;
 		static int minVolume;
 		static int presentVolume;
 public static boolean onOrOff(){
-System.out.println("inside turned on or off");
-if(isTurnedOn == false){
-isTurnedOn = true;
-System.out.println("is TV turned on :" + isTurnedOn);
+System.out.println("inside on or off");
+if(isConnected == false){
+isConnected = true;
+System.out.println("is speaker connected :" + isConnected);
 }
-else if(isTurnedOn == true){
-isTurnedOn = false;
-System.out.println("is Tv turned on :" + isTurnedOn);
+else if(isConnected == true){
+isConnected = false;
+System.out.println("is speaker connected :" + isConnected);
 }
-return isTurnedOn;
+return isConnected;
 }
+
 public static void increaseVolume(){
 	System.out.println("inside increaseVolume()");
-	if(isTurnedOn == true){
+	if(isConnected == true){
 		if(presentVolume < maxVolume){
 			presentVolume = presentVolume + 1;
 			System.out.println("the present volume is :" +presentVolume);
@@ -32,10 +33,10 @@ public static void increaseVolume(){
 		System.out.println("end of increaseVolume()");
 		return;
 	}
-	
-	public static void decreaseVolume(){
+
+public static void decreaseVolume(){
 	System.out.println("inside decreaseVolume()");
-	if(isTurnedOn == true){
+	if(isConnected == true){
 		if(presentVolume > minVolume){
 			presentVolume = presentVolume - 1;
 			System.out.println("the present volume is :" +presentVolume);
@@ -51,4 +52,14 @@ public static void increaseVolume(){
 		return;
 	}
 
+
 }
+
+/*
+tv
+ac
+grinder
+microwave oven
+neckband
+mixer
+*/
