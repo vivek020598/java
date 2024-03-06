@@ -18,5 +18,7 @@ public static void main(String fruits[]){
 	
 	
 	HopComs.getFruits();
+	 HopComs.updateFruits("strawberry" , "tomato");
+	 HopComs.getFruits();
 }
 }

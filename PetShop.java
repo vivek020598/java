@@ -27,4 +27,22 @@ public static void getItems(){
 		
 	}
 }
+
+      public static boolean updateItems(String newItem, String oldItem){
+	  System.out.println("update accessory");
+	  boolean isUpdated = false ;
+	  
+	  for(int index=0 ; index<items.length ; index++){
+		  
+		  if(items[index]==oldItem){
+			  items[index] = newItem;
+			  isUpdated = true;
+		  }
+		  
+	  }
+	  System.out.println("items updates successfully");
+		  return isUpdated;
+      }
+
+
 }

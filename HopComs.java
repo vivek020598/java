@@ -1,5 +1,4 @@
 class HopComs{
-
 		 static String ownerName = "Arun";
 		 static String address = "Madiwala";
 		 static String fruits[] = {null,null,null,null,null,null,null,null,null,null};
@@ -27,4 +26,21 @@ public static void getFruits(){
 		
 	}
 }
+
+public static boolean updateFruits(String newFruit, String oldFruit){
+	  System.out.println("update fruits");
+	  boolean isUpdated = false ;
+	  
+	  for(int index=0 ; index<fruits.length ; index++){
+		  
+		  if(fruits[index]==oldFruit){
+			 fruits[index] = newFruit;
+			  isUpdated = true;
+		  }
+		  
+	  }
+	  System.out.println("fruits updates successfully");
+		  return isUpdated;
+      }
+
 }

@@ -1,6 +1,7 @@
-class HealthAndGlow{
+class Decathlon{
 
-		 static String address = "Rajajinagar";
+		 static String ownerName = "Chandru";
+		 static String address = "Hebbala";
 		 static String products[] = {null,null,null,null,null,null,null,null,null,null};
 		 static int index;
 //method	 
@@ -13,6 +14,7 @@ public static boolean addProducts(String product){
 		isAdded = true;
 	System.out.println("product added successfully");
 	}
+	
 	else{
 		System.out.println("products can't be null");
 	}
@@ -41,5 +43,6 @@ public static boolean updateProducts(String newProduct, String oldProduct){
 	  System.out.println("products updates successfully");
 		  return isUpdated;
       }
+
 
 }

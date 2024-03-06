@@ -16,5 +16,7 @@ public static void main(String Products[]){
 	
 	
 	Suppliments.getProducts();
+	Suppliments.updateProducts("protein-shake" , "omega-3");
+	Suppliments.getProducts();
 }
 }

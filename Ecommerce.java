@@ -26,4 +26,21 @@ public static void getProducts(){
 		
 	}
 }
+
+public static boolean updateProducts(String newProduct, String oldProduct){
+	  System.out.println("update product");
+	  boolean isUpdated = false ;
+	  
+	  for(int index=0 ; index<products.length ; index++){
+		  
+		  if(products[index]==oldProduct){
+			  products[index] = newProduct;
+			  isUpdated = true;
+		  }
+		  
+	  }
+	  System.out.println("products updates successfully");
+		  return isUpdated;
+      }
+
 }

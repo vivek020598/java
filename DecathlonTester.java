@@ -17,5 +17,8 @@ public static void main(String sportProducts[]){
 	
 	
 	Decathlon.getProducts();
+	
+	Decathlon.updateProducts("bike" , "cycle");
+	Decathlon.getProducts();
 }
 }

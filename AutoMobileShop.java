@@ -30,6 +30,23 @@ class AutoMobileShop{
 			   System.out.println(accessories [index]);
 		   }
 	   }
+	   
+	   public static boolean updateAccessories(String newAccessories, String oldAccessories){
+	  System.out.println("update Accessories");
+	  boolean isUpdated = false ;
+	  
+	  for(int index=0 ; index<accessories.length ; index++){
+		  
+		  if(accessories[index]==oldAccessories){
+			  accessories[index] = newAccessories;
+			  isUpdated = true;
+		  }
+		  
+	  }
+	  System.out.println("accessories updates successfully");
+		  return isUpdated;
+      }
+	   
 
 
 }

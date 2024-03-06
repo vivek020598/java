@@ -19,5 +19,7 @@ class AutoMobileShopTester{
    
   
   AutoMobileShop.getAccessories();
+  AutoMobileShop.updateAccessories("mirror" , "seats");
+	AutoMobileShop.getAccessories();
 }
 }

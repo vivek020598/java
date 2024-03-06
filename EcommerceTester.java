@@ -16,5 +16,7 @@ public static void main(String products[]){
 	
 	
 	Ecommerce.getProducts();
+	Ecommerce.updateProducts("hdd" , "ssd");
+	Ecommerce.getProducts();
 }
 }
