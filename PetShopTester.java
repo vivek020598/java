@@ -18,5 +18,7 @@ public static void main(String petProducts[]){
 	PetShop.getItems();
 	PetShop.updateItems("chain" , "pedegree");
 	PetShop.getItems();
+	PetShop.deleteItems("beds");
+	PetShop.getItems();
 }
 }

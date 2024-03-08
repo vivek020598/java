@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Suppliments{
 
 		
@@ -43,5 +44,19 @@ public static boolean updateProducts(String newProduct, String oldProduct){
 	  System.out.println("products updates successfully");
 		  return isUpdated;
       }
+      
+            public static void deleteProducts(String product){
+	int newIndex, oldIndex;
+	
+	for( newIndex=0, oldIndex=0;oldIndex<products.length; oldIndex++){
+		if(products[oldIndex] != product){
+			products[newIndex++] = products[oldIndex];
+			
+		}		
+	}
+	products = Arrays.copyOf(products, newIndex);
+	return;	
+	}
+
 
 }

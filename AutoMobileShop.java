@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class AutoMobileShop{
 	static String name = "bike";
 	static String accessories[] = {null,null,null,null,null,null,null,null,null,null};
@@ -46,6 +47,19 @@ class AutoMobileShop{
 	  System.out.println("accessories updates successfully");
 		  return isUpdated;
       }
+      
+                  public static void deleteAccessories(String accessory){
+	int newIndex, oldIndex;
+	
+	for( newIndex=0, oldIndex=0;oldIndex<accessories.length; oldIndex++){
+		if(accessories[oldIndex] != accessory){
+			accessories[newIndex++] = accessories[oldIndex];
+			
+		}		
+	}
+	accessories = Arrays.copyOf(accessories, newIndex);
+	return;	
+	}
 	   
 
 

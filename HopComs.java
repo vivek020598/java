@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class HopComs{
 		 static String ownerName = "Arun";
 		 static String address = "Madiwala";
@@ -42,5 +43,18 @@ public static boolean updateFruits(String newFruit, String oldFruit){
 	  System.out.println("fruits updates successfully");
 		  return isUpdated;
       }
+      
+            public static void deleteFruits(String fruit){
+	int newIndex, oldIndex;
+	
+	for( newIndex=0, oldIndex=0;oldIndex<fruits.length; oldIndex++){
+		if(fruits[oldIndex] != fruit){
+			fruits[newIndex++] = fruits[oldIndex];
+			
+		}		
+	}
+	fruits = Arrays.copyOf(fruits, newIndex);
+	return;	
+	}
 
 }

@@ -19,5 +19,7 @@ public static void main(String sportProducts[]){
 	MedicalShop.getProducts();
 	MedicalShop.updateProducts("sanitizer" , "dressings");
 	MedicalShop.getProducts();
+	MedicalShop.deleteProducts("mask");
+	MedicalShop.getProducts();
 }
 }

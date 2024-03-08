@@ -18,5 +18,7 @@ class MobileAccessoriesTester{
    MobileAccessories.getAccessories();
   boolean isAccessoriesAdded = MobileAccessories.updateAccessories("Memory Card","Arm Band");
   MobileAccessories.getAccessories();
+  MobileAccessories.deleteAccessories("Charging Stand");
+  MobileAccessories.getAccessories();
 }
 }

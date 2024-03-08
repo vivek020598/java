@@ -19,5 +19,8 @@ public static void main(String sportProducts[]){
 	Stationary.getProducts();
 	Stationary.updateProducts("color paper" , "charts");
 	Stationary.getProducts();
+	
+	Stationary.deleteProducts("marker");
+	Stationary.getProducts();
 }
 }

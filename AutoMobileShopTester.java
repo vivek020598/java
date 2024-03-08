@@ -21,5 +21,8 @@ class AutoMobileShopTester{
   AutoMobileShop.getAccessories();
   AutoMobileShop.updateAccessories("mirror" , "seats");
 	AutoMobileShop.getAccessories();
+	
+	AutoMobileShop.deleteAccessories("centre stand");
+	AutoMobileShop.getAccessories();
 }
 }

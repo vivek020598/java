@@ -18,5 +18,8 @@ public static void main(String products[]){
 	Ecommerce.getProducts();
 	Ecommerce.updateProducts("hdd" , "ssd");
 	Ecommerce.getProducts();
+	
+	Ecommerce.deleteProducts("denim ware");
+	Ecommerce.getProducts();
 }
 }

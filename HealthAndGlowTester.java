@@ -19,5 +19,8 @@ public static void main(String beautyProducts[]){
 	HealthAndGlow.getProducts();
 	HealthAndGlow.updateProducts("powder" , "soap");
 	HealthAndGlow.getProducts();
+	
+		HealthAndGlow.deleteProducts("hair spray");
+	HealthAndGlow.getProducts();
 }
 }

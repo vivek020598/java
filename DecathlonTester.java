@@ -20,5 +20,9 @@ public static void main(String sportProducts[]){
 	
 	Decathlon.updateProducts("bike" , "cycle");
 	Decathlon.getProducts();
+	
+	
+	Decathlon.deleteProducts("tents");
+	Decathlon.getProducts();
 }
 }
