@@ -1,7 +1,7 @@
 class Dunzo{
 public static double search(String items){
 
-if(food == "dark fantasy"){
+if(food == "electronic item delevery"){
 return 10.00;
 }
 
