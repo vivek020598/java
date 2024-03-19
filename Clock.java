@@ -28,7 +28,4 @@ class Clock{
 		  System.out.println("clock size is " + color);
 		  System.out.println("clock color is " + material);
 	  }
-
-
-
 }

@@ -30,10 +30,20 @@ cloth2.size = "XL";
 cloth2.color = "Blue";
 cloth2.type = "Summer wear";
 cloth2.design();*/
+
+/*Cloth cloth3 = new Cloth();
+cloth3.design();
+cloth3.brandName = "MCB";
+cloth3.material = "Polyster";
+cloth3.price = 300.00;
+cloth3.size = "XL";
+cloth3.color = "Blue";
+cloth3.type = "Summer wear";
+cloth3.design();*/
+
 Cloth cloth  = new Cloth("UCB","cotton", 100.00,"M","Black","Festive wear");
 cloth.design();
 	   
-	  
 
 Cloth cloth1  = new Cloth("RCB" ,"Nylon",200.00,"L" ,"White","Casual wear");
 cloth1.design();

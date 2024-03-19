@@ -1,26 +1,34 @@
 class Perfume{
-String brandName;
-String material;
-double price;
-String size;
-String color;
-String type;
+    String ingredients[] = new String[3];
+    String brandName;
+	String volume;
+	double price;
+	boolean isMadeInIndia;
+	
+	public Perfume(){
+	
+	}
+	
+	public Perfume(String ingredients[] ,String brandName, String volume, double price, boolean isMadeInIndia){
+	System.out.println("Perfumes constructor is invoked ");
+	        this.ingredients = ingredients;
+	        this.brandName = brandName;
+	        this.volume = volume;
+	        this.price = price;
+			this.isMadeInIndia = isMadeInIndia ;
+	}		
+	
+	public void displayInfo(){
+		System.out.println("perfumes info before init ");
+		System.out.println("perfumes brandName is " + brandName);
+		System.out.println("perfumes volume is " + volume);
+		System.out.println("perfumes price is " + price);
+		System.out.println("perfumes isMadeInIndia " + isMadeInIndia);
+		System.out.println("ingredients Used : ");
+		for(int index = 0 ; index < this.ingredients.length; index++){
+		System.out.print(this.ingredients[index] +" ,");
+		}
+		System.out.println();
+	}
 
-/*public Perfume(){
-	System.out.println("used to give pleasant scent to body");
-}*/
-
-public Perfume(String brandName ,double price, String type){
-	System.out.println("used to give pleasant scent to body");
-           this.brandName = brandName;
-           this.price = price;
-            this.type = type;		   
-	             
-	   }
-
-public void design(){
-	System.out.println("brand name is" +brandName);
-	System.out.println("price is" +price);
-	System.out.println("type is" +type);
-}
 }
